@@ -2,7 +2,7 @@
 
 @section('content')
 
-<section class="hero is-dark is-bold">
+<section class="hero is-light is-bold">
   <div class="hero-body">
     <div class="container has-text-centered">
       <h1 class="title">
