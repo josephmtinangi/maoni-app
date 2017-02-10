@@ -28,3 +28,9 @@ $factory->define(App\FeedbackType::class, function (Faker\Generator $faker) {
         'name' => ucfirst($faker->word),
     ];
 });
+
+$factory->define(App\Category::class, function (Faker\Generator $faker) {
+    return [
+        'name' => ucfirst($faker->word),
+    ];
+});
