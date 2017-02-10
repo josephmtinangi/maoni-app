@@ -8,6 +8,8 @@ use App\FeedbackType;
 
 use App\Category;
 
+use App\Region;
+
 class FeedbackController extends Controller
 {
     /**
@@ -29,7 +31,8 @@ class FeedbackController extends Controller
     {
         $feedback_types = FeedbackType::all();
         $categories = Category::all();
-        return view('feedback.create', compact('feedback_types', 'categories'));
+        $regions = Region::all();
+        return view('feedback.create', compact('feedback_types', 'categories', 'regions'));
     }
 
     /**

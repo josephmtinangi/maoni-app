@@ -124,8 +124,9 @@
                 <div class="select is-fullwidth">
                     <select name="region">
                         <option value="">-Select-</option>
-                        <option value="">Option 1</option>
-                        <option value="">Option 2</option>
+                        @foreach($regions as $region)
+                        <option value="{{ $region->id }}">{{ $region->name }}</option>
+                        @endforeach
                     </select>
                 </div>
             </div>
