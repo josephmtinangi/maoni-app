@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class DatabaseSeeder extends Seeder
+class FeedbackTypesTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,7 +11,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
-        $this->call(FeedbackTypesTableSeeder::class);
+        DB::table('feedback_types')->delete();
+        factory(App\FeedbackType::class, 5)->create();
     }
 }
