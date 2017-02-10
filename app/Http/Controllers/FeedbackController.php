@@ -10,6 +10,8 @@ use App\Category;
 
 use App\Region;
 
+use App\Feedback;
+
 class FeedbackController extends Controller
 {
     /**
@@ -43,7 +45,8 @@ class FeedbackController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
+        Feedback::create($request->all());
+        return back()->with('status', 'Success');
     }
 
     /**

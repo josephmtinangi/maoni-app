@@ -11,7 +11,7 @@
             </div>
             <div class="control">
                 <div class="select is-fullwidth">
-                    <select name="feedback_type">
+                    <select name="feedback_type_id">
                         <option value="">-Select-</option>
                         @foreach($feedback_types as $feedback_type)
                             <option value="{{ $feedback_type->id }}">{{ $feedback_type->name }}</option>
@@ -26,7 +26,7 @@
             </div>
             <div class="control">
                 <div class="select is-fullwidth">
-                    <select name="category">
+                    <select name="category_id">
                         <option value="">-Select-</option>
                         @foreach($categories as $category)
                         <option value="{{ $category->id }}">{{ $category->name }}</option>
@@ -81,11 +81,12 @@
                 <div class="select is-fullwidth">
                     <select name="initial">
                         <option value="">-Select-</option>
-                        <option value="">Mr.</option>
-                        <option value="">Mrs.</option>
-                        <option value="">Miss</option>
-                        <option value="">Dr.</option>
-                        <option value="">Prof.</option>
+                        <option value="Mr.">Mr.</option>
+                        <option value="Mrs.">Mrs.</option>
+                        <option value="Miss">Miss</option>
+                        <option value="Dr.">Dr.</option>
+                        <option value="Prof.">Prof.</option>
+                        <option value="Eng.">Eng.</option>
                     </select>
                 </div>
             </div>
@@ -122,7 +123,7 @@
             </div>
             <div class="control">
                 <div class="select is-fullwidth">
-                    <select name="region">
+                    <select name="region_id">
                         <option value="">-Select-</option>
                         @foreach($regions as $region)
                         <option value="{{ $region->id }}">{{ $region->name }}</option>
