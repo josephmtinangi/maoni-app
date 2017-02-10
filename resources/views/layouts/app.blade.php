@@ -12,6 +12,8 @@
     	@include('partials.navbar')
     </div>
 
+    @include('partials.notification')       
+
     @yield('content')
     
     @include('partials.footer')

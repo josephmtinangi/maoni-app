@@ -46,7 +46,7 @@ class FeedbackController extends Controller
     public function store(Request $request)
     {
         Feedback::create($request->all());
-        return back()->with('status', 'Success');
+        return back()->with('status', 'Successfully Sent, please come back to view your feedback after FIVE WORKING DAYS!( Your Query TRN is 10afcf2)');
     }
 
     /**
