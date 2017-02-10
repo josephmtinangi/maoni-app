@@ -17,7 +17,31 @@
 <div class="app container">
     <div class="columns">
         <div class="column is-three-quarters is-mobile">
-            1
+            
+            <div class="tile is-ancestor">
+              <div class="tile is-parent">
+                <div class="tile is-child box">
+                  <p class="title">What is this?</p>
+                  <p>
+                      Vehicle convenience store boat into cyber-camera shrine grenade ablative. Media nodal point faded 8-bit uplink convenience store long-chain hydrocarbons lights denim assault fluidity fetishism cartel bridge corrupted euro-pop. Network woman-ware urban long-chain hydrocarbons neon marketing. Kowloon courier j-pop media marketing apophenia meta-rain industrial grade neural numinous tattoo RAF drugs. 
+                  </p>
+                </div>
+              </div>            
+              <div class="tile is-4 is-vertical is-parent">
+                <div class="tile is-child box">
+                  <p class="title">Features</p>
+                  <ul>
+                      <li>Submit your suggestions</li>
+                      <li>Track the suggestions</li>
+                  </ul>
+                </div>
+                <div class="tile is-child box">
+                  <p class="title">Pricing</p>
+                  <p>FREE</p>
+                </div>
+              </div>
+            </div>
+
         </div>
         <div class="column is-mobile">           
             <div class="card">
