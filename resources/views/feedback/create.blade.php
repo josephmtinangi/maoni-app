@@ -16,7 +16,9 @@
 </section>
 
 <div class="feedback-form container">
-    <form action="{{ url('feedbacks') }}" method="POST">
+    <form action="{{ url('feedback') }}" method="POST">
+    
+        {{ csrf_field() }}
 
         @include('feedback._form')
 

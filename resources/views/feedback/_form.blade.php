@@ -4,7 +4,7 @@
     </div>
     <div class="control">
         <div class="select is-fullwidth">
-            <select>
+            <select name="feedback_type">
                 <option value="">-Select-</option>
                 <option value="">Option 1</option>
                 <option value="">Option 2</option>
@@ -18,7 +18,7 @@
     </div>
     <div class="control">
         <div class="select is-fullwidth">
-            <select>
+            <select name="category">
                 <option value="">-Select-</option>
                 <option value="">Option 1</option>
                 <option value="">Option 2</option>
@@ -31,7 +31,7 @@
         <label class="label">Subject</label>
     </div>
     <div class="control">
-        <input type="text" placeholder="Subject" class="input">
+        <input type="text" name="subject" placeholder="Subject" class="input">
     </div>
 </div>
 <div class="control is-horizontal">
@@ -39,7 +39,7 @@
         <label class="label">Details</label>
     </div>
     <div class="control">
-        <textarea placeholder="Details" rows="10" class="textarea"></textarea>
+        <textarea name="details" placeholder="Details" rows="10" class="textarea"></textarea>
     </div>
 </div>
 <div class="control is-horizontal">
@@ -47,6 +47,6 @@
         <label class="label">Suggestions</label>
     </div>
     <div class="control">
-        <textarea placeholder="Suggestions" rows="10" class="textarea"></textarea>
+        <textarea name="suggestions" placeholder="Suggestions" rows="10" class="textarea"></textarea>
     </div>
 </div>
