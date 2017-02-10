@@ -13,8 +13,9 @@
                 <div class="select is-fullwidth">
                     <select name="feedback_type">
                         <option value="">-Select-</option>
-                        <option value="">Option 1</option>
-                        <option value="">Option 2</option>
+                        @foreach($feedback_types as $feedback_type)
+                            <option value="{{ $feedback_type->id }}">{{ $feedback_type->name }}</option>
+                        @endforeach
                     </select>
                 </div>
             </div>
