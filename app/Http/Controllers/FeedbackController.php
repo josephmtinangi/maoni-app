@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\FeedbackType;
 
+use App\Category;
+
 class FeedbackController extends Controller
 {
     /**
@@ -26,7 +28,8 @@ class FeedbackController extends Controller
     public function create()
     {
         $feedback_types = FeedbackType::all();
-        return view('feedback.create', compact('feedback_types'));
+        $categories = Category::all();
+        return view('feedback.create', compact('feedback_types', 'categories'));
     }
 
     /**

@@ -28,8 +28,9 @@
                 <div class="select is-fullwidth">
                     <select name="category">
                         <option value="">-Select-</option>
-                        <option value="">Option 1</option>
-                        <option value="">Option 2</option>
+                        @foreach($categories as $category)
+                        <option value="{{ $category->id }}">{{ $category->name }}</option>
+                        @endforeach
                     </select>
                 </div>
             </div>
