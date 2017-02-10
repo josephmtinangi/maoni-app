@@ -16,21 +16,30 @@
 </section>
 
 <div class="feedback-form container">
-    <form action="{{ url('feedback') }}" method="POST">
-    
-        {{ csrf_field() }}
+<div class="card">
+  <header class="card-header">
+    <p class="card-header-title">
+      Submit your suggestions
+    </p>
+  </header>
+  <div class="card-content">
+      <form action="{{ url('feedback') }}" method="POST">
+      
+          {{ csrf_field() }}
 
-        @include('feedback._form')
+          @include('feedback._form')
 
-        <div class="control is-horizontal">
-            <div class="control-label">
-                <label class="label"></label>
-            </div>
-            <div class="control">
-                <button type="submit" class="button is-info">Submit</button>
-            </div>
-        </div>
-    </form>    
+          <div class="control is-horizontal">
+              <div class="control-label">
+                  <label class="label"></label>
+              </div>
+              <div class="control">
+                  <button type="submit" class="button is-info">Submit</button>
+              </div>
+          </div>
+      </form>
+  </div>
+</div>  
 </div>
 
 @endsection
