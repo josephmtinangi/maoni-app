@@ -1,25 +1,32 @@
 @extends('layouts.app')
 
+@section('header')
+
+    <section class="hero is-light is-bold">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title">
+                    Submit
+                </h1>
+                <h2 class="subtitle">
+                    Your suggestion
+                </h2>
+            </div>
+        </div>
+    </section>
+
+@endsection
+
 @section('content')
 
-<section class="hero is-light is-bold">
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      <h1 class="title">
-        Submit
-      </h1>
-      <h2 class="subtitle">
-        Your suggestion
-      </h2>
-    </div>
-  </div>
-</section>
+    <div class="feedback-form container">
 
-<div class="feedback-form container">
-  <form action="{{ url('feedback') }}" method="POST">
-      {{ csrf_field() }}
-      @include('feedback._form')
-  </form>  
-</div>
+        @include('errors.list')
+
+        <form action="{{ url('feedback') }}" method="POST">
+            {{ csrf_field() }}
+            @include('feedback._form')
+        </form>
+    </div>
 
 @endsection

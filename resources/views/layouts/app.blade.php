@@ -12,9 +12,13 @@
     	@include('partials.navbar')
     </div>
 
+    @yield('header')
+
     @include('partials.notification')       
 
-    @yield('content')
+    <div class="main">
+        @yield('content')
+    </div>
     
     @include('partials.footer')
 		
