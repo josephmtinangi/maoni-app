@@ -20,7 +20,16 @@
         <a class="nav-item is-tab is-hidden-mobile">About</a>
         <a class="nav-item is-tab is-hidden-mobile">Contact</a>
 
-        @if(Auth::guest())
+        @if( ! Auth::guest())
+
+            <span class="nav-item">
+                <form action="{{ url('logout') }}" method="POST">
+                    {{ csrf_field() }}
+                    <button type="submit" class="button">Logout</button>
+                </form>
+            </span>
+
+        @else
             <a href="{{ url('login') }}" class="nav-item is-tab">Login</a>
             <a href="{{ url('register') }}" class="nav-item is-tab">Register</a>
         @endif
