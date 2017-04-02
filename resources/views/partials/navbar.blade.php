@@ -17,7 +17,7 @@
                 <span>Submit</span>
             </a>
 		</span>
-        <a class="nav-item is-tab is-hidden-mobile">About</a>
+        <a href="/about" class="nav-item is-tab is-hidden-mobile">About</a>
         <a class="nav-item is-tab is-hidden-mobile">Contact</a>
 
         @if( ! Auth::guest())

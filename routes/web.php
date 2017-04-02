@@ -18,3 +18,5 @@ Route::get('/', function () {
 Route::resource('feedback', 'FeedbackController');
 
 Auth::routes();
+
+Route::get('about', 'PageController@about');
