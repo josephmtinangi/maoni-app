@@ -25,13 +25,13 @@
             <span class="nav-item">
                 <form action="{{ url('logout') }}" method="POST">
                     {{ csrf_field() }}
-                    <button type="submit" class="button">Logout</button>
+                    <button type="submit" class="button">Sign Out</button>
                 </form>
             </span>
 
         @else
-            <a href="{{ url('login') }}" class="nav-item is-tab">Login</a>
-            <a href="{{ url('register') }}" class="nav-item is-tab">Register</a>
+            <a href="{{ url('login') }}" class="nav-item is-tab">Sign In</a>
+            <a href="{{ url('register') }}" class="nav-item is-tab">Sign Up</a>
         @endif
 
     </div>

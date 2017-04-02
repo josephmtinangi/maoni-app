@@ -1,7 +1,7 @@
 <div class="card">
     <header class="card-header">
         <p class="card-header-title">
-            Submit your suggestions
+            &nbsp;
         </p>
     </header>
     <div class="card-content">

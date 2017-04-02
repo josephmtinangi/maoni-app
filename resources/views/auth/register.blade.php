@@ -1,8 +1,17 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="columns is-mobile">
-        <div class="column is-half is-offset-one-quarter">
+    <section class="hero is-info">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            Sign Up
+          </h1>
+        </div>
+      </div>
+    </section>
+    <div class="columns is-mobile auth">
+        <div class="column is-4 is-offset-4">
 
             @include('errors.list')
 
@@ -41,7 +50,7 @@
                 </p>
 
                 <p class="control">
-                    <button type="submit" class="button is-success">Register</button>
+                    <button type="submit" class="button is-success">Sign Up</button>
                 </p>
 
             </form>

@@ -2,15 +2,12 @@
 
 @section('header')
 
-    <section class="hero is-light is-bold">
+    <section class="hero is-medium is-primary is-bold">
         <div class="hero-body">
             <div class="container has-text-centered">
-                <h1 class="title">
-                    Submit
+                <h1 class="title is-1">
+                    Tuma maoni yako
                 </h1>
-                <h2 class="subtitle">
-                    Your suggestion
-                </h2>
             </div>
         </div>
     </section>
@@ -23,10 +20,15 @@
 
         @include('errors.list')
 
-        <form action="{{ url('feedback') }}" method="POST">
-            {{ csrf_field() }}
-            @include('feedback._form')
-        </form>
+        <div class="columns is-mobile">
+            <div class="column is-6 is-offset-3">
+               <form action="{{ url('feedback') }}" method="POST">
+                    {{ csrf_field() }}
+                    @include('feedback._form')
+                </form> 
+            </div>
+        </div>
+
     </div>
 
 @endsection
