@@ -1,11 +1,11 @@
 <nav class="nav has-shadow">
     <div class="nav-left">
         <a href="{{ url('/') }}" class="nav-item">
-            Maoni
+            <span class="icon">
+                <i class="fa fa-bullhorn"></i>
+            </span>
         </a>
-        <a class="nav-item is-tab is-hidden-mobile is-active">Home</a>
-        <a class="nav-item is-tab is-hidden-mobile">Learn</a>
-        <a class="nav-item is-tab is-hidden-mobile">Track</a>
+        <a href="/" class="nav-item is-tab is-hidden-mobile {{ Request::is('/') ? 'is-active' : '' }}">Home</a>
     </div>
 
     <div class="nav-center">
@@ -14,11 +14,11 @@
 				<span class="icon">
 					<i class="fa fa-comment"></i>
 				</span>
-                <span>Submit</span>
+                <span>Tuma</span>
             </a>
 		</span>
-        <a href="/about" class="nav-item is-tab is-hidden-mobile">About</a>
-        <a href="/contact" class="nav-item is-tab is-hidden-mobile">Contact</a>
+        <a href="/about" class="nav-item is-tab is-hidden-mobile {{ Request::is('about') ? 'is-active' : '' }}">About</a>
+        <a href="/contact" class="nav-item is-tab is-hidden-mobile {{ Request::is('contact') ? 'is-active' : '' }}">Contact</a>
 
         @if( ! Auth::guest())
 
@@ -30,8 +30,8 @@
             </span>
 
         @else
-            <a href="{{ url('login') }}" class="nav-item is-tab">Sign In</a>
-            <a href="{{ url('register') }}" class="nav-item is-tab">Sign Up</a>
+            <a href="{{ url('login') }}" class="nav-item is-tab {{ Request::is('login') ? 'is-active' : '' }}">Sign In</a>
+            <a href="{{ url('register') }}" class="nav-item is-tab {{ Request::is('register') ? 'is-active' : '' }}">Sign Up</a>
         @endif
 
     </div>

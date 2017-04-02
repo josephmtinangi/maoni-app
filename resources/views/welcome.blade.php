@@ -8,9 +8,9 @@
                 <h1 class="title">
                     Maoni yako
                 </h1>
-                <h2 class="subtitle">
-                    Tujenge Taifa Pamoja
-                </h2>
+                <p>
+                    <a href="/feedback/create" class="button is-dark is-large">Tuma</a>
+                </p>
             </div>
         </div>
     </section>
@@ -28,11 +28,7 @@
                         <div class="tile is-child box">
                             <p class="title">What is this?</p>
                             <p>
-                                Vehicle convenience store boat into cyber-camera shrine grenade ablative. Media nodal
-                                point faded 8-bit uplink convenience store long-chain hydrocarbons lights denim assault
-                                fluidity fetishism cartel bridge corrupted euro-pop. Network woman-ware urban long-chain
-                                hydrocarbons neon marketing. Kowloon courier j-pop media marketing apophenia meta-rain
-                                industrial grade neural numinous tattoo RAF drugs.
+                                We manage and track your organization complaints.
                             </p>
                         </div>
                     </div>
@@ -40,8 +36,8 @@
                         <div class="tile is-child box">
                             <p class="title">Features</p>
                             <ul>
-                                <li>Submit your suggestions</li>
-                                <li>Track the suggestions</li>
+                                <li>Submit your complaints</li>
+                                <li>Track the complaints</li>
                             </ul>
                         </div>
                         <div class="tile is-child box">
