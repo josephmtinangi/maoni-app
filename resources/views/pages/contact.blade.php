@@ -18,7 +18,7 @@
 
     <div class="app container">
         <div class="columns">
-            <div class="column is-three-quarters is-mobile">
+            <div class="column is-three-quarters">
 
                 <div class="columns">
                     <div class="column is-6 is-offset-3">

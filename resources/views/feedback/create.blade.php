@@ -21,7 +21,7 @@
         @include('errors.list')
 
         <div class="columns is-mobile">
-            <div class="column is-6 is-offset-3">
+            <div class="column">
                <form action="{{ url('feedback') }}" method="POST">
                     {{ csrf_field() }}
                     @include('feedback._form')

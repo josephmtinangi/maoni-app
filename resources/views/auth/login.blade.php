@@ -11,7 +11,7 @@
       </div>
     </section>
     <div class="columns is-mobile auth">
-        <div class="column is-4 is-offset-4">
+        <div class="column is-8 is-offset-2">
 
             @include('errors.list')
 

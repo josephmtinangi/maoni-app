@@ -11,7 +11,7 @@
       </div>
     </section>
     <div class="columns is-mobile auth">
-        <div class="column is-4 is-offset-4">
+        <div class="column is-8 is-offset-2">
 
             @include('errors.list')
 
@@ -43,7 +43,7 @@
                 </p>
 
                 <p class="control has-icon">
-                    <input type="password" name="password_confirmation" placeholder="Password Confirmation" class="input is-large">
+                    <input type="password" name="password_confirmation" placeholder="Confirm" class="input is-large">
                     <span class="icon is-small">
                         <i class="fa fa-lock"></i>
                     </span>
