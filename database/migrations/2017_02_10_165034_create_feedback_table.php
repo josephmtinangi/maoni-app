@@ -15,10 +15,8 @@ class CreateFeedbackTable extends Migration
     {
         Schema::create('feedback', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('feedback_type_id');
-            $table->foreign('feedback_type_id')->references('id')->on('feedback_types')->onUpdate('cascade');
-            $table->integer('category_id');
-            $table->foreign('category_id')->references('id')->on('categories')->onUpdate('cascade');
+            $table->integer('feedback_type_id')->index();
+            $table->integer('category_id')->index();
             $table->string('subject');
             $table->text('details');
             $table->text('suggestions');
