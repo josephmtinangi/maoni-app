@@ -21,3 +21,7 @@ Auth::routes();
 
 Route::get('about', 'PageController@about');
 Route::get('contact', 'PageController@contact');
+
+Route::group(['namespace' => 'admin', 'middleware' => 'auth'], function () {
+	Route::resource('admin/categories', 'CategoryController');
+});

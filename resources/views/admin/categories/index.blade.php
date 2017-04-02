@@ -1,0 +1,8 @@
+@extends('layouts.admin')
+
+
+@section('content')
+
+    <div class="title is-2">Categories</div>
+
+@endsection
