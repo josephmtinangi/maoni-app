@@ -53,9 +53,10 @@
                 <a href="/admin" class="item {{ Request::is('admin') ? 'active' : '' }}"><span class="icon"><i
                                 class="fa fa-home"></i></span><span
                             class="name">Dashboard</span></a>
-                <a href="/admin/feedback" class="item {{ Request::is('admin/feedback') ? 'active' : '' }}"><span class="icon"><i
+                <a href="/admin/feedback" class="item {{ Request::is('admin/feedback') ? 'active' : '' }}"><span
+                            class="icon"><i
                                 class="fa fa-comment"></i></span><span class="name">Complaints</span></a>
-                <a href="#" class="item {{ Request::is('admin/users') ? 'active' : '' }}"><span class="icon"><i
+                <a href="/admin/users" class="item {{ Request::is('admin/users') ? 'active' : '' }}"><span class="icon"><i
                                 class="fa fa-users"></i></span><span
                             class="name">Users</span></a>
                 <a href="/admin/categories" class="item {{ Request::is('admin/categories/*') ? 'active' : '' }}"><span
