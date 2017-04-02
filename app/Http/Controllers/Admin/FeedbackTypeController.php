@@ -1,18 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
+namespace App\Http\Controllers\Admin;
 
 use App\FeedbackType;
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
-use App\Category;
-
-use App\Region;
-
-use App\Feedback;
-
-class FeedbackController extends Controller
+class FeedbackTypeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -21,7 +15,8 @@ class FeedbackController extends Controller
      */
     public function index()
     {
-        
+        $feedback_types = FeedbackType::latest()->get();
+        return view('admin.feedback-types.index', compact('feedback_types'));
     }
 
     /**
@@ -31,10 +26,7 @@ class FeedbackController extends Controller
      */
     public function create()
     {
-        $feedback_types = FeedbackType::all();
-        $categories = Category::all();
-        $regions = Region::all();
-        return view('feedback.create', compact('feedback_types', 'categories', 'regions'));
+        return view('admin.feedback-types.create');
     }
 
     /**
@@ -46,11 +38,14 @@ class FeedbackController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'feedback_type_id' => 'required',
+            'name' => 'required',
         ]);
 
-        Feedback::create($request->all());
-        return back()->with('status', 'Successfully Sent, please come back to view your feedback after FIVE WORKING DAYS!( Your Query TRN is 10afcf2)');
+        $feedback_type = new FeedbackType();
+        $feedback_type->name = request('name');
+        $feedback_type->save();
+
+        return redirect('admin/feedback-types');
     }
 
     /**
@@ -72,7 +67,8 @@ class FeedbackController extends Controller
      */
     public function edit($id)
     {
-        //
+        $feedbackType = FeedbackType::find($id);
+        return view('admin.feedback-types.edit', compact('feedbackType'));
     }
 
     /**
@@ -84,7 +80,16 @@ class FeedbackController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $feedbackType = FeedbackType::find($id);
+
+        $this->validate($request, [
+            'name' => 'required',
+        ]);
+
+        $feedbackType->name = request('name');
+        $feedbackType->save();
+
+        return redirect('admin/feedback-types');
     }
 
     /**

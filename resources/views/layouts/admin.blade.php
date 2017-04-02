@@ -59,6 +59,10 @@
                 <a href="/admin/categories" class="item {{ Request::is('admin/categories/*') ? 'active' : '' }}"><span
                             class="icon"><i class="fa fa-folder-o"></i></span><span
                             class="name">Categories</span></a>
+                <a href="/admin/feedback-types"
+                   class="item {{ Request::is('admin/feedback-types/*') ? 'active' : '' }}"><span
+                            class="icon"><i class="fa fa-folder-o"></i></span><span
+                            class="name">Types</span></a>
             </div>
         </div>
     </aside>
