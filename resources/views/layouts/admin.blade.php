@@ -56,7 +56,7 @@
                 <a href="#" class="item {{ Request::is('admin/users') ? 'active' : '' }}"><span class="icon"><i
                                 class="fa fa-users"></i></span><span
                             class="name">Users</span></a>
-                <a href="/admin/categories" class="item {{ Request::is('admin/categories') ? 'active' : '' }}"><span
+                <a href="/admin/categories" class="item {{ Request::is('admin/categories/*') ? 'active' : '' }}"><span
                             class="icon"><i class="fa fa-folder-o"></i></span><span
                             class="name">Categories</span></a>
             </div>
