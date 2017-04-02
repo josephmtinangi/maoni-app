@@ -25,5 +25,6 @@ Route::get('contact', 'PageController@contact');
 Route::group(['namespace' => 'admin', 'middleware' => 'auth'], function () {
     Route::resource('admin/categories', 'CategoryController');
     Route::resource('admin/feedback-types', 'FeedbackTypeController');
+    Route::resource('admin/feedback', 'FeedbackController');
     Route::get('admin', 'AdminController@overview');
 });

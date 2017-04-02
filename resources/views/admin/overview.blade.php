@@ -5,6 +5,6 @@
 
     <div class="title is-2">Overview</div>
 
-    
+
 
 @endsection
