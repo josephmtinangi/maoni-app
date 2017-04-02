@@ -18,7 +18,7 @@
             </a>
 		</span>
         <a href="/about" class="nav-item is-tab is-hidden-mobile">About</a>
-        <a class="nav-item is-tab is-hidden-mobile">Contact</a>
+        <a href="/contact" class="nav-item is-tab is-hidden-mobile">Contact</a>
 
         @if( ! Auth::guest())
 

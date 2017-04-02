@@ -20,3 +20,4 @@ Route::resource('feedback', 'FeedbackController');
 Auth::routes();
 
 Route::get('about', 'PageController@about');
+Route::get('contact', 'PageController@contact');
